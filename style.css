@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --white: #FFFCF9;
+  --gray: #E9E6E3;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(67.08deg, #1E46A3 0%, #000000 48.94%, #C12A23 99.97%);
+}
+
+#app {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1.875rem;
+}
+
+#app header {
+  margin-top: 8.125rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.625rem;
+}
+
+#app header h2 {
+  font-family: 'Poppis', sans-serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: 60px;
+  color: var(--white);
+  text-align: center;
+}
+
+#app header img {
+  max-width: 88px;
+}
+
+#app main {
+  display: none;
+
+  gap: 2.125rem;
+}
+
+#app main img {
+  max-width: 170px;
+  max-height: 240px;
+  object-fit: cover;
+}
+
+#app main div h1 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 30px;
+  color: var(--white);
+}
+
+#app main div p {
+  margin-top: 1.25rem;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 24px;
+  color: var(--white);
+  max-width: 422px;
+}
+
+#app footer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.625rem;
+}
+
+#app footer button {
+  all: unset;
+  cursor: pointer;
+
+  background: var(--gray);
+  border: 2px solid #1A1A1A;
+  border-radius: 5px;
+
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  padding: 0.75rem 1rem;
+}
+
+#app footer button img {
+  max-width: 36px;
+}
+
+#app footer button strong {
+  font-family: 'Poppis', sans-serif;
+  font-weight: 700;
+  font-size: 0.75rem;
+  line-height: 18px;
+}
+
+#app footer span {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 21px;
+  text-align: center;
+  color: var(--white);
+
+  max-width: 381px;
+}
+
+@media (max-width: 768px) {
+  #app {
+    padding-top: 3.125rem;
+    padding-block: 1.875rem;
+    padding-bottom: 6.25rem;
+  }
+
+  #app main {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25rem;
+  }
+
+  #app main div h1,
+  #app main div p {
+    text-align: center;
+  }
+
+  #app main div p {
+    margin-top: 1.25rem;
+  }
+
+  #app footer span {
+    font-size: 0.75rem;
+    max-width: 375px;
+  }
+}
